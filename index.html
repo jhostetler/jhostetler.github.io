@@ -1,0 +1,106 @@
+<html>
+<body>
+	<div style="width: 100%;">
+		<div style="width: 300px; float: left;">
+			<img src="res/face.jpg" height=250/>
+		</div>
+		<div style="margin-left: 320px;">
+			<h1>Jesse Hostetler</h1>
+			<h3>PhD, Oregon State University</h3>
+			<p/>jessehostetler @ gmail com
+			<p/>hostetje @ eecs oregonstate edu
+			<p/><a href="res/hostetler_cv.pdf">Curriculum Vitae</a>
+			<p/><a href="https://scholar.google.com/citations?user=ngJLn9EAAAAJ">Google Scholar profile</a>
+			<p/><a href="https://github.com/jhostetler">Github</a>
+		</div>
+	</div>
+
+	<hr/>
+	<h2>Publications</h2>
+	<hr/>
+
+	<h4>Ph.D. Dissertation</h4>
+	<p/>[<a href="http://ir.library.oregonstate.edu/xmlui/handle/1957/60635">link</a>] Jesse Hostetler (2017) Monte Carlo Tree Search with Fixed and Adaptive Abstractions. PhD dissertation, Oregon State University.
+
+	<h4>Journal</h4>
+	<p/>[<a href="ref/hostetler-preprint-2017a.pdf">pdf</a>] Jesse Hostetler, Alan Fern, and Thomas Dietterich (submitted). Monte Carlo tree search with fixed and adaptive state abstractions.
+
+	<h4>Conference</h4>
+	<p/>[<a href="ref/hostetler-uai-2015.pdf">pdf</a>] Jesse Hostetler, Alan Fern, and Thomas Dietterich (2015). Progressive abstraction refinement in sparse sampling. <i>Conference on Uncertainty in Artificial Intelligence (UAI).</i>
+	<p/>[<a href="ref/hostetler-aaai-2014.pdf">pdf</a>] Jesse Hostetler, Alan Fern, and Thomas Dietterich (2014). State abstraction in Monte Carlo tree search. <i>AAAI Conference on Artificial Intelligence.</i>
+	<p/>[<a href="ref/king-icaps-2013.pdf">pdf</a>] Brian King, Alan Fern, and Jesse Hostetler (2013). On adversarial policy switching with experiments in real-time strategy games. <i>International Conference on Automated Planning and Scheduling (ICAPS).</i>
+	<p/>[<a href="ref/hostetler-uai-2012.pdf">pdf</a>] Jesse Hostetler, Ethan Derezynski, Thomas Dietterich, and Alan Fern (2012). Inferring strategies from limited reconnaissance in real-time strategy games. <i>Conference on Uncertainty in Artificial Intelligence (UAI).</i>
+	<p/>[<a href="ref/derezynski-aiide-2011.pdf">pdf</a>] Ethan Derezynski, Jesse Hostetler, Alan Fern, Thomas Dietterich, Thao-Trang Hoang, and Mark Udarbe (2011). Learning probabilistic behavior models in real-time strategy games. <i>AAAI Conference on AI in Interactive Digital Entertainment (AIIDE).</i>
+	<p/> G. Nugent, K. Kupzyk, S. A. Riley, L. D. Miller, J. Hostetler, L. K. Soh, and A. Samal (2009). Empirical usage metadata in learning objects. <i>IEEE Fronties in Education Conference (FIE).</i>
+
+	<h4>Workshop</h4>
+	<p/>[<a href="ref/king-aiide-2012.pdf">pdf</a>] Brian King, Alan Fern, and Jesse Hostetler (2012). Adversarial policy switching with application to RTS games. <i>AAAI Conference on AI in Interactive Digital Entertainment (AIIDE); Workshop on AI in Adversarial Real-Time Games.</i>
+	<hr/>
+	<h4>Unrefereed</h4>
+	<p/> David Kortenkamp, Peter Bonasso, David Musliner, Michael Pelican, and Jesse Hostetler (2011). Embedding planning technology into satellite systems. <i>AIAA Infotech@Aerospace.</i>
+	
+	<hr/>
+	<h2>Software</h2>
+	<hr/>
+	
+	<h4>Progressive Abstraction Refinement for Sparse Sampling</h4>
+	<p/>A Java implementation of abstract Forward Search Sparse Sampling and the PARSS algorithm.
+	<ul>
+		<li><a href="https://github.com/jhostetler/jmcplan">Current version (github)</a></li>
+		<li>Snapshot of UAI version: <a href="software/parss-3.5.zip">parss-3.5.zip</a> --- Checksum (MD5): <a href="software/parss-3.5.zip.md5"/>parss-3.5.zip.md5</a></li>
+	</ul>
+
+	<p/> Note that the Github repository contains a lot of code related to other projects as well. The UAI snapshot may be your best option if just want to use or modify the PARSS algorithm.
+	
+	<p/>Please reference the following paper in relation to the PARSS algorithm:
+	<pre>
+	@inproceedings{hostetler2015progressive,
+	  title={Progressive Abstraction Refinement for Sparse Sampling},
+	  author={Hostetler, Jesse and Fern, Alan and Dietterich, Thomas},
+	  booktitle={Conference on Uncertainty in Artificial Intelligence (UAI)},
+	  year={2015}
+	}
+	</pre>
+	
+	<!--////////////////////////////////////////////////////////////////////////////////////--> 
+	<hr/>
+	<h2>Data</h2>
+	<hr/>
+	
+	<h4><i>Starcraft: Broodwar</i> Opening Strategy Dataset</h4>
+	<a href="data/uai-2012-starcraft-dataset.zip">ZIP archive (61 MB)</a>
+
+	<p>
+	This dataset contains log data from 509 expert-level <i>Starcraft: Broodwar</i> games. All of the games are Protoss versus Terran matchups, and the dataset focuses on predicting the Protoss player's choices from the Terran player's perspective.
+	</p>
+
+	<p>
+	The games are divided into 30-second time steps, and the first 14 time steps from each game are retained. For each game, the data includes
+	<ul>
+		<li> The total number of units of each type that were observable in each time step </li>
+		<li> How many units of each type were produced </li>
+		<li> How many units of each type were seen </li>
+		<li> The Terran player's "scouting effort", which is the percentage of the Protoss player's Main Base + Natural Expansion that the Terran player could see </li>
+	</ul>
+	</p>
+
+	<p>
+	The README file included with the dataset explains the contents of each file in more detail.
+	</p>
+
+	<p>
+	Please reference the following paper in regards to this data:
+	<pre>
+	@inproceedings{hostetler2012inferring,
+	  title={Inferring Strategies from Limited Reconnaissance in Real-time Strategy Games},
+	  author={Hostetler, Jesse and Derezynski, Ethan and Dietterich, Thomas and Fern, Alan},
+	  booktitle={Conference on Uncertainty in Artificial Intelligence (UAI)},
+	  year={2012}
+	}
+	</pre>
+	</p>
+	
+	<!----------------------------------------------------------------------->
+	<hr/>
+</body>
+</html>
